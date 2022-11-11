@@ -17,6 +17,7 @@
 #
 echo '添加Passwall依赖feeds'
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 echo '=========Add passwall feeds source OK!========='
 
 echo '添加Passwall软件源'
@@ -30,7 +31,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/lu
 echo '=========Add argon-mod OK!========='
 
 
-git clone https://github.com/sirpdboy/luci-app-advanced package/luci-app-advanced
+#git clone https://github.com/sirpdboy/luci-app-advanced package/luci-app-advanced
 
 
 echo '添加lwz322的K3屏幕插件'
