@@ -77,6 +77,9 @@ jobs:
 
     - name: 安装feeds中描述内容
       run: cd openwrt && ./scripts/feeds install -a
+     
+    - name: 安装feeds中描述内容again
+      run: cd openwrt && ./scripts/feeds install -a
 
     - name: 加载自定义编译配置文件
       run: |
